@@ -20,7 +20,7 @@ class Settings(QtWidgets.QMainWindow):
         
         self.setupSettings()
         self.home.clicked.connect(lambda: self.widget.setCurrentIndex(widget.currentIndex()-1))
-        self.help.clicked.connect(lambda: webbrowser.open("https://github.com/yeti2006/SpotiLike"))
+        self.help.clicked.connect(lambda: self.widget.setCurrentIndex(widget.currentIndex()+1))
         
         for x in settings:
             getattr(self, x).stateChanged.connect(lambda item=x: self.change_setting(item))

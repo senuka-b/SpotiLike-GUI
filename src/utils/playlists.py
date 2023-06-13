@@ -64,19 +64,6 @@ def get_playlists(spotify) -> dict:
 
 
 
-    playlists = {
-        str(item["name"]): {
-            "id": item["id"],
-            "image_url": item["images"][0]["url"]
-            if not item["images"] == []
-            else "noIcon",
-        }
-        for item in spotify.current_user_playlists()["items"]
-        if item["owner"]["id"] == spotify.me()["id"]
-    }
-
-    return playlists
-
 
 def save_images(playlists) -> None:
     """Downloads playlist icons returned to './assets/playlists.'"""

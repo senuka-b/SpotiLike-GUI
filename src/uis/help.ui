@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>sdf</class>
+ <widget class="QMainWindow" name="sdf">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>806</width>
+    <height>580</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SpotiLike - Help</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: rgb(249, 252, 255);
+background-color: rgb(25, 20, 20);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>781</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Nirmala UI Semilight</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Nirmala UI Semilight'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:18pt; color:#55ff7f;&quot;&gt;SpotiLike &amp;lt;3&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:18pt; color:#55ff7f;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;SpotiLike is a simple app that can create hotkeys to save the currently playing Spotify track to a any playlist of your choosing.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; text-decoration: underline;&quot;&gt;How to setup hotkeys?&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600; text-decoration: underline;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;▻  When the app is ready to go after authorisation, it would attempt to fetch all of the playlists you own.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;▻  The list of playlists are now accessible in the drop down under &amp;quot;&lt;span style=&quot; font-style:italic;&quot;&gt;Playlists&amp;quot; .&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;▻  Select the playlist you want to create a hotkey for, and type out the hotkey in the &amp;quot;&lt;span style=&quot; font-style:italic;&quot;&gt;Shortcut&amp;quot;  &lt;/span&gt;text box.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; text-decoration: underline;&quot;&gt;How should I write the hotkey?&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600; text-decoration: underline;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;▻  You are free to create the hotkey by combining any two or more keys with &amp;quot;+&amp;quot; as the separator.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;	◈ If you were to trigger an event when you press ctrl, shift, a and b together. you would write:&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;		✔️ &lt;span style=&quot; font-style:italic; color:#ffc0ab;&quot;&gt;ctrl+shift+a+b&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic; color:#ffc0ab;&quot;&gt;	&lt;/span&gt;◈ It is also possible for you to use any two or more letters in the alphabet without a special key:&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;		✔️ &lt;span style=&quot; font-style:italic; color:#ffc0ab;&quot;&gt;a+b+c&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; text-decoration: underline;&quot;&gt;What keys can I use?&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600; text-decoration: underline;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Here's a list of keys that works as hotkeys.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;alt&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;backspace&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;caps_lock&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;ctrl&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;cmd&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;delete&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;down&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;end&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;enter&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;esc&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;f1&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;f10&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;f11&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;f12&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;f13&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;f14&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;f15&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;f16&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;f17&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;f18&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;f19&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;f2&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;f20&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;f3&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;f4&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;f5&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;f6&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;f7&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;f8&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;f9&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;home&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;insert&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;left&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;media_next&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;media_play_pause&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;media_previous&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;media_volume_down&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;media_volume_mute&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;media_volume_up&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;menu&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;num_lock&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;page_down&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;page_up&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;pause&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;print_screen&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;right&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;scroll_lock&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;shift&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;space&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;tab&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ce9178;&quot;&gt;&amp;quot;up&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;,&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;+ all the letters in the alphabet &amp;amp; special characters&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#cccccc;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; font-weight:600; text-decoration: underline; color:#ffffff;&quot;&gt;Where can I find the source code?&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas,Courier New,monospace'; font-size:14px; font-weight:600; text-decoration: underline; color:#000000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#ffffff;&quot;&gt;The source code is accessible via&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#000000;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas,Courier New,monospace'; font-size:14px; color:#55ffff;&quot;&gt;https://github.com/yetimeh/spotilike-gui&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; text-decoration: underline; color:#0000ff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Thank you for using SpotiLike. Lots of love from Yeti!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="help">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>0</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton::hover
+{
+background-color : lightgreen;
+}</string>
+    </property>
+    <property name="text">
+     <string>Help</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="home">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton::hover
+{
+background-color : lightgreen;
+}</string>
+    </property>
+    <property name="text">
+     <string>Home</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="settings">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>0</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton::hover
+{
+background-color : lightgreen;
+}</string>
+    </property>
+    <property name="text">
+     <string>Settings</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -103,8 +103,8 @@ class Home(QtWidgets.QMainWindow):
         self.settings.clicked.connect(lambda: widget.setCurrentWidget(window_settings))
         self.home.clicked.connect(lambda: widget.setCurrentWidget(window_home))
         self.help.clicked.connect(
-            lambda: webbrowser.open("https://yeti2006.github.io/spotilike")
-        )
+            lambda: widget.setCurrentWidget(window_help))
+        
         self.applyChanges.clicked.connect(self.reloadHotkeys)
         self.applyChanges.setEnabled(False)
         self.isHotkeyzRunning = False
@@ -399,7 +399,7 @@ class PlaylistsRunnable(QThread):
 
 if __name__ == "__main__":
 
-    import main, settings
+    import main, settings, help
 
     app = QtWidgets.QApplication(sys.argv)
     app.setWindowIcon(QIcon("./icon.ico"))
@@ -409,9 +409,11 @@ if __name__ == "__main__":
 
     window_home = Home()
     window_settings = settings.Settings(widget)
+    window_help = help.Help(widget)
 
     widget.addWidget(window_home)
     widget.addWidget(window_settings)
+    widget.addWidget(window_help)
 
     widget.setFixedSize(window_home.width(), window_home.height())
 

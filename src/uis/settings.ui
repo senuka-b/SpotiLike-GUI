@@ -273,6 +273,126 @@ background-color : lightgreen;
      <bool>true</bool>
     </property>
    </widget>
+   <widget class="QCheckBox" name="fetch_playlists">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>250</y>
+      <width>431</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Fetch playlists</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>200</width>
+      <height>300</height>
+     </size>
+    </property>
+    <property name="shortcut">
+     <string/>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="tristate">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>250</y>
+      <width>361</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(85, 255, 127)</string>
+    </property>
+    <property name="text">
+     <string>Fetch user playlists from the API (disable only if you use the app for liked songs)</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="fetch_songs_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>320</y>
+      <width>431</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Stay in System Tray </string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>200</width>
+      <height>300</height>
+     </size>
+    </property>
+    <property name="shortcut">
+     <string/>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="tristate">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>320</y>
+      <width>411</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(85, 255, 127)</string>
+    </property>
+    <property name="text">
+     <string>When toggled, the app would continue to run in the background when closed. You can kill the app by going to the System Tray menu and clicking &quot;Exit&quot;</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
