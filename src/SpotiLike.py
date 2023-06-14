@@ -7,14 +7,12 @@ from pynput import keyboard
 
 import sys
 import logging
-from pprint import pprint as p
 import spotipy
 from spotipy import SpotifyOAuth
 from urllib.request import urlretrieve
 import logging
 
 import os
-import webbrowser
 
 from dotenv import load_dotenv
 

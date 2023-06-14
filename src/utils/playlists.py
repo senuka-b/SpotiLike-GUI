@@ -57,7 +57,6 @@ def get_playlists(spotify) -> dict:
                                                 "image_url": item["images"][0]["url"] if not item["images"] == [] else "noIcon",}
 
         data = spotify.next(data)
-        print(data['total'])
 
 
     return playlists
