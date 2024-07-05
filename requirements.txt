@@ -1,0 +1,4 @@
+pynput
+fuzzywuzzy
+pyqt5
+spotipy

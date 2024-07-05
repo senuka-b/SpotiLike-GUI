@@ -1,12 +1,12 @@
+![](readme/SpotiLike.png)
+
 # SpotiLike-GUI
 
 Save Spotify songs on-the-go while you're listening to your Liked Songs library or your favorite playlists with custom hotkeys!
 
-This app allows you to instantiate a global hotkey thread to save a currently playing Spotify song to your Liked Songs library or a playlist of your chosing. This lets you **not** have to re-open Spotify to like/save a song. I wrote this simple script because I found it annoying that I had to re-open Spotify just to save a song that I liked. I did not want to interrupt my workflow but at the same time didn't want to miss a cool track either!
+This app lets you have a custom hotkey linked to one of your custom playlists in Spotify that would take the current song you're listening to, and put that on the playlist for you. This allows you **not** have to re-open Spotify to like/save a song. I wrote this simple script because I found it annoying that I had to re-open Spotify just to save a song that I liked. I did not want to interrupt my workflow but at the same time didn't want to miss a cool track either!
 
 ## Screenshots
-
-
 
 ![home](readme/home.png)
 <br>
@@ -14,46 +14,53 @@ This app allows you to instantiate a global hotkey thread to save a currently pl
 <br>
 ![help](readme/help.png)
 
-## Usage
+## Usage & Installation
 
 > A simple guide on how to use the app is placed in the '`help`' tab within the app itself.
 
+You can grab the [latest release here](https://github.com/senuka-b/SpotiLike-GUI/releases/latest).
 
-## Installation
+1. Download the `SpotiLike.zip` archive.
+2. EXtract it to wherever you want.
+3. Run the `SpotiLike.exe` file.
 
-:warning: The app is still in BETA, may have so many bugs.
-
-You can install a bundled version of the app here:
-
-https://www.mediafire.com/file/fipz7kses6jqx9k/SpotiLike.zip/file
-
+If you want the application to run whenever you start up Windows. Refer to [this guide here](https://support.microsoft.com/en-us/windows/add-an-app-to-run-automatically-at-startup-in-windows-10-150da165-dcd9-7230-517b-cf3c295d89dd).
 
 ## Bundling the app yourself
 
-I used the package `cx_Freeze` to bundle the app.
+I used the package `cx_Freeze` to bundle the app for the [release](https://github.com/senuka-b/SpotiLike-GUI/releases/latest).
 
 You can find the setup file in `src/setup.py` .
 
-Run:
+1. Clone the repo
 
-```
-$ python setup.py build
-```
+2. Run `pip install -r requirements.txt`
 
-However, if you are using any other way to bundle the app, you must consider the below stated requirements:
+3. Move into the `src` directory and then run:
 
-1. A Spotify app should be created from the [Spotify Developer Portal](https://developer.spotify.com/). Please make sure to set a Redirect URI to be `http://localhost:9000` in the app settings.
 
-2. A valid `CLIENT_ID` and `CLIENT_SECRET` should be passed in `SpotiLike.py`. You can find these two variables at line 42 and 43.
+    ```
+    $ python setup.py build
+    ```
 
-3. Now you can get the app working, to bundle the app, keep in mind the app requires the '`assets`' folder, the '`uis`' folder and also the '`config`' folder.
+The application uses PKCE authorization so there is no need for a client secret. You can run the application or make changes to it at your own will.
 
-    * `assets` - contains all the icons for the app and playlist image data
-    * `uis` - contains the user interface style files.
-    * `config` - contains all user settings and user data
+## How it works
 
-How does it work?
+The workflow of the app is simple.
 
+1. Authorises the user with PKCE
+
+2. Attempts to fetch all playlists
+    - All the playlist pictures / icons of these playlists are automatically downloaded named by the playlist's ID
+
+    - This is done in every boot, therefore newly created playlists would automatically be added unless you choose to disable this option.
+
+3. When the user enters a hotkey, it attempts to match the typed word to the most suitable _existing_ key
+
+4. Then it formats the key to a suitable format of which `pynput.GlobalHotKey` accepts
+
+5. The hotkey thread runs in the background globally
 
 ## Library requirements:
 
@@ -67,6 +74,6 @@ How does it work?
 
 ___
 
-## Leave a star!
+## Leave a star ⭐!
 
 If you found the concept behind this app useful, please make sure you leave a star on the repo! Thanks!
