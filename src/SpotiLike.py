@@ -257,9 +257,6 @@ class Home(QtWidgets.QMainWindow):
 
         self.selection.addItems([playlist_name for playlist_name in value])
 
-        with open("./config/data.json") as f:
-            data = json.load(f)
-
         data = value  # That's our user data, so we dump it to data.json
         with open("./config/data.json", "w") as f:
             json.dump(data, f, indent=4)
@@ -348,9 +345,17 @@ class Home(QtWidgets.QMainWindow):
             "Logged out from Spotify as {}".format(self.sp.me()["display_name"]),
             "liked_songs",
         )
-        os.remove("./.cache")
-        for x in os.listdir("./assets/playlists/"):
+
+        os.remove("./.cache")  # Clearing Spotify authorization
+
+        for config in os.listdir("./config/"):  # Clearing configuration
+            if not config.startswith("settings"):
+                with open(f"./config/{config}", "w") as f:
+                    json.dump({}, f)
+
+        for x in os.listdir("./assets/playlists/"):  # Clearing playlist icons
             os.remove(os.path.join("./assets/playlists/", x))
+
         self.reload()
 
     def start_thread(self):
