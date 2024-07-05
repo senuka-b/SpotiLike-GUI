@@ -1,4 +1,8 @@
+<div align="center">
+
 ![](readme/SpotiLike.png)
+
+</div>
 
 # SpotiLike-GUI
 
