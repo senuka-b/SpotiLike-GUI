@@ -58,16 +58,21 @@ HOTKEY_PREFIXES = [
 def format(key: str) -> str:
     """Formats a hotkey-string in the format to pass in keyboard.GlobalHotkeys class"""
 
-    key.lower().strip()
+    if not key:
+        return
+
     if key.endswith("+"):
         key[:-1]
 
     result = [
         i
         for i in [
-            f"<{thing}>"
-            if any(map(key.__contains__, HOTKEY_PREFIXES)) and thing in HOTKEY_PREFIXES
-            else thing
+            (
+                f"<{thing}>"
+                if any(map(key.__contains__, HOTKEY_PREFIXES))
+                and thing in HOTKEY_PREFIXES
+                else thing
+            )
             for thing in key.split("+")
         ]
         if i
@@ -78,6 +83,12 @@ def format(key: str) -> str:
 
 def match(keys: str) -> str:
     """Matches the string to the nearest possible value in HOTKEY_PREFIXES"""
+
+    if keys:
+        if keys.strip().lower() == "none":
+            return None
+    else:
+        return None
 
     result = list(
         dict.fromkeys(

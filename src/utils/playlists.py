@@ -4,6 +4,8 @@ from urllib.request import urlretrieve
 import json
 import logging
 
+from pprint import pprint
+
 logging.getLogger(__name__)
 
 
@@ -22,9 +24,11 @@ def playlists_and_tracks(spotify) -> dict:
         if item["owner"]["id"] == spotify.me()["id"]:
             playlists_and_tracks[item["name"]] = {
                 "id": item["id"],
-                "image_url": item["images"][0]["url"]
-                if not item["images"] == []
-                else "./assets/error.ico",
+                "image_url": (
+                    item["images"][0]["url"]
+                    if not item["images"] == []
+                    else "./assets/error.ico"
+                ),
                 "tracks": [
                     song["track"]["id"]
                     for song in spotify.playlist_tracks(item["id"])["items"]
@@ -41,27 +45,30 @@ def get_playlists(spotify) -> dict:
         "image_url": "the_url_to_the_icon_of_the_playlist"
     }
         }"""
-    
+
     playlists = {}
-    
-    
+
     data = spotify.current_user_playlists()
-    user_id = spotify.me()['id']
-    
-    while data['next']:
+    user_id = spotify.me()["id"]
+
+    while True:
         for item in data["items"]:
-            
+
             if item["owner"]["id"] == user_id:
-        
-                playlists[str(item["name"])] = {"id": item["id"],
-                                                "image_url": item["images"][0]["url"] if not item["images"] == [] else "noIcon",}
 
-        data = spotify.next(data)
+                playlists[str(item["name"])] = {
+                    "id": item["id"],
+                    "image_url": (
+                        item["images"][0]["url"] if item["images"] else "noIcon"
+                    ),
+                }
 
+        if data["next"]:
+            data = spotify.next(data)
+        else:
+            break
 
     return playlists
-
-
 
 
 def save_images(playlists) -> None:
