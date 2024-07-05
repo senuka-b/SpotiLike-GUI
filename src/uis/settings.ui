@@ -333,7 +333,7 @@ background-color : lightgreen;
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QCheckBox" name="fetch_songs_3">
+   <widget class="QCheckBox" name="system_tray">
     <property name="geometry">
      <rect>
       <x>30</x>

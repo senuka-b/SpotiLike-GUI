@@ -3,6 +3,8 @@ from PyQt5.QtWidgets import QStackedWidget
 import os
 import sys
 
+from playlists import settings
+
 
 class MainWidget(QStackedWidget):
     closed = pyqtSignal()
@@ -12,7 +14,13 @@ class MainWidget(QStackedWidget):
 
     def closeEvent(self, event):
         event.ignore()
-        self.hide()
+
+        if settings()["system_tray"]:
+
+            self.hide()
+        else:
+            sys.exit()
+
         self.closed.emit()
 
     def silent_reload(self):

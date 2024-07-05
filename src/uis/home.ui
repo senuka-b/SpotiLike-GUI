@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>806</width>
-    <height>580</height>
+    <width>883</width>
+    <height>606</height>
    </rect>
   </property>
   <property name="font">
@@ -22,11 +22,14 @@
    <string notr="true">color: rgb(249, 252, 255);
 background-color: rgb(25, 20, 20);</string>
   </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLineEdit" name="shortcut">
     <property name="geometry">
      <rect>
-      <x>540</x>
+      <x>600</x>
       <y>290</y>
       <width>261</width>
       <height>81</height>
@@ -51,7 +54,7 @@ color: rgb(255, 255, 255);</string>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>420</x>
+      <x>480</x>
       <y>320</y>
       <width>111</width>
       <height>41</height>
@@ -72,10 +75,10 @@ color: rgb(255, 255, 255);</string>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>320</y>
+      <x>440</x>
+      <y>310</y>
       <width>31</width>
-      <height>41</height>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
@@ -112,7 +115,10 @@ color: rgb(255, 255, 255);</string>
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(29, 185, 84);</string>
+     <string notr="true">color: rgb(29, 185, 84);
+border-color: rgb(188, 255, 180);
+background-color: rgb(56, 77, 75);
+</string>
     </property>
     <property name="frame">
      <bool>true</bool>
@@ -198,7 +204,7 @@ background-color : lightgreen;
    <widget class="QLabel" name="image">
     <property name="geometry">
      <rect>
-      <x>540</x>
+      <x>600</x>
       <y>30</y>
       <width>261</width>
       <height>241</height>
@@ -217,7 +223,7 @@ background-color : lightgreen;
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>420</x>
+      <x>480</x>
       <y>510</y>
       <width>141</width>
       <height>41</height>
@@ -235,7 +241,7 @@ background-color : lightgreen;
    <widget class="QLabel" name="username">
     <property name="geometry">
      <rect>
-      <x>580</x>
+      <x>640</x>
       <y>510</y>
       <width>191</width>
       <height>41</height>
@@ -247,23 +253,38 @@ background-color : lightgreen;
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(85, 255, 127)</string>
+     <string notr="true">color: rgb(85, 255, 127);
+border: 1px solid;
+border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 0, 0, 255), stop:0.166 rgba(255, 255, 0, 255), stop:0.333 rgba(0, 255, 0, 255), stop:0.5 rgba(0, 255, 255, 255), stop:0.666 rgba(0, 0, 255, 255), stop:0.833 rgba(255, 0, 255, 255), stop:1 rgba(255, 0, 0, 255));
+border-right-color: rgb(255, 26, 137);
+border-left-color: rgb(19, 255, 240);
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
     </property>
     <property name="text">
      <string>username</string>
+    </property>
+    <property name="margin">
+     <number>0</number>
     </property>
    </widget>
    <widget class="QPushButton" name="logout">
     <property name="geometry">
      <rect>
-      <x>600</x>
+      <x>660</x>
       <y>380</y>
       <width>91</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(85, 255, 255);</string>
+     <string notr="true">color: rgb(85, 255, 255);
+background-color: rgb(56, 77, 75);</string>
     </property>
     <property name="text">
      <string>Log out</string>
@@ -272,17 +293,19 @@ background-color : lightgreen;
    <widget class="QPushButton" name="applyChanges">
     <property name="geometry">
      <rect>
-      <x>700</x>
+      <x>760</x>
       <y>380</y>
       <width>101</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton::pressed
+     <string notr="true">background-color: rgb(56, 77, 75);
+QPushButton::pressed
 {
 background-color : rgb(255, 246, 222);
-}</string>
+}
+</string>
     </property>
     <property name="text">
      <string>Apply Changes</string>
