@@ -41,8 +41,6 @@ options = {
             "icon.ico",
             "assets",
             "config",
-            "update",
-            "readme.txt",
         ],
         "zip_include_packages": "PyQt5",
         "includes": [
