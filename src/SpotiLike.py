@@ -8,17 +8,11 @@ from pynput import keyboard
 import sys
 import logging
 import spotipy
-from spotipy import SpotifyOAuth
+from spotipy import SpotifyPKCE
 from urllib.request import urlretrieve
 import logging
 
 import os
-
-from dotenv import load_dotenv
-
-load_dotenv()
-
-# import credentials Use your own credentials if you're testing.
 
 sys.path.append(os.path.abspath("./utils/"))
 sys.path.append(os.path.abspath("./interfaces/"))
@@ -35,12 +29,6 @@ import thread, playlists
 from format_hotkey import *
 
 
-scope = "user-read-playback-state user-library-modify user-library-read playlist-read-private playlist-modify-private playlist-modify-public"  # Initliaze Scopes. To read, current playing
-
-CLIENT_ID = os.getenv("CLIENT_ID")
-CLIENT_SECRET = os.getenv("CLIENT_SECRET")
-
-
 class Home(QtWidgets.QMainWindow):
     def __init__(self):
         super(Home, self).__init__()
@@ -55,11 +43,19 @@ class Home(QtWidgets.QMainWindow):
         """Authorization"""
 
         self.sp = spotipy.Spotify(
-            auth_manager=SpotifyOAuth(
-                client_id=CLIENT_ID,
-                client_secret=CLIENT_SECRET,
+            auth_manager=SpotifyPKCE(
+                client_id="d3bd878bdc174094b7ff3379d7a90613",
                 redirect_uri="http://localhost:9000",
-                scope=scope,
+                scope=[
+                    "user-read-playback-state",
+                    "user-library-modify",
+                    "user-library-read",
+                    "playlist-read-private",
+                    "playlist-modify-private",
+                    "playlist-modify-public",
+                    "user-read-currently-playing",
+                    "user-read-private",
+                ],
             )
         )
 
@@ -100,9 +96,8 @@ class Home(QtWidgets.QMainWindow):
 
         self.settings.clicked.connect(lambda: widget.setCurrentWidget(window_settings))
         self.home.clicked.connect(lambda: widget.setCurrentWidget(window_home))
-        self.help.clicked.connect(
-            lambda: widget.setCurrentWidget(window_help))
-        
+        self.help.clicked.connect(lambda: widget.setCurrentWidget(window_help))
+
         self.applyChanges.clicked.connect(self.reloadHotkeys)
         self.applyChanges.setEnabled(False)
         self.isHotkeyzRunning = False
@@ -336,9 +331,11 @@ class Home(QtWidgets.QMainWindow):
             data = json.load(f)
 
         data[
-            "liked_songs"
-            if self.selection.currentText() == "Saved Songs"
-            else self.selection.currentText()
+            (
+                "liked_songs"
+                if self.selection.currentText() == "Saved Songs"
+                else self.selection.currentText()
+            )
         ] = format(match(self.shortcut.text()))
 
         with open("./config/hotkeys.json", "w") as f:
